@@ -4,7 +4,9 @@
   "type": "module",
   "scripts": {
     "generate": "tsx internal/generate-readme.ts",
-    "prepare": "husky"
+    "prepare": "husky",
+    "generate:hu": "node internal/generate-readme.hu.js",
+    "generate:all": "npm run generate && npm run generate:hu"
   },
   "devDependencies": {
     "@types/node": "^22.10.0",
